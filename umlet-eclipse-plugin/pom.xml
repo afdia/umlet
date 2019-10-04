@@ -13,7 +13,7 @@
 	<repositories>
 		<repository>
 			<id>eclipse-mars</id>
-			<url>http://download.eclipse.org/releases/mars</url>
+			<url>http://download.eclipse.org/releases/2019-06</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>
