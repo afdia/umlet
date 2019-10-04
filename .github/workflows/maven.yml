@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         java_version: [1.8]
-        os: [windows-latest, macOS-latest]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v1
@@ -18,4 +18,4 @@ jobs:
       with:
         java-version: ${{ matrix.java_version }}
     - name: Build with Maven
-      run: mvn clean package -P checks --file pom.xml
+      run: mvn clean package -X -P checks --file pom.xml
